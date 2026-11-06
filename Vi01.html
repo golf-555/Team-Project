@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="lo" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ສາຂາພັດທະນາເວັບໄຊ ຮຽນກ່ຽວກັບຫຍັງ? | Web Design & Development Guide</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Lao -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        lao: ['"Noto Sans Lao"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-blue-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+          </script>
+
+    <style>
+        body {
+            font-family: 'Noto Sans Lao', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60A5FA 0%, #A855F7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }      <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-purple-600 flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-blue-500/30">
+                    <i class="fa-solid font-code"></i>
+                </div>
+                <span class="font-bold text-lg sm:text-xl tracking-tight text-white">WebDev Major Guide</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-300">
+                <a href="#overview" class="hover:text-blue-400 transition-colors">ພາບລວມ</a>
+                <a href="#pillars" class="hover:text-blue-400 transition-colors">3 ເສົາຫຼັກ</a>
+                <a href="#playground" class="hover:text-blue-400 transition-colors">ລອງຂຽນໂຄ້ດ</a>
+                <a href="#careers" class="hover:text-blue-400 transition-colors">ອາຊີບໃນອະນາຄົດ</a>
+                <a href="#quiz" class="hover:text-blue-400 transition-colors">ແບບທົດສອບ</a>
+            </nav>
+            <a href="#quiz" class="bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium px-4 py-2 rounded-lg transition shadow-md shadow-blue-600/30">
+                ທົດສອບຄວາມຮູ້
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="overview" class="relative py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center overflow-hidden">
+            <div class="absolute inset-0 -z-10 flex items-center justify-center">
+                <div class="w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-3xl"></div>
+                <div class="w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-3xl"></div>
+            </div>
+
+            <span class="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-sm font-semibold mb-6">
+                🚀 ແນະນຳສາຂາວິຊາອາຊີບຍຸກດິຈິທັລ
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                ສາຂາການອອກແບບ ແລະ ພັດທະນາເວັບໄຊ <br>
+                <span class="gradient-text">ຮຽນກ່ຽວກັບຫຍັງແດ່?</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-slate-400 text-lg sm:text-xl leading-relaxed mb-10">
+                ຮຽນກ່ຽວກັບການຄິດຄົ້ນ, ອອກແບບໜ້າຕາ (UI/UX), ຂຽນໂຄ້ດສ່ວນໜ້າ ແລະ ສ່ວນຫຼັງ ຕະຫຼອດຮອດການຈັດການຖານຂໍ້ມູນ ເພື່ອສ້າງເວັບໄຊ ແລະ ແອັບພລິເຄຊັນທີ່ທັນສະໄໝ ງ່າຍຕໍ່ການໃຊ້ງານ.
+            </p>
+
+            <!-- Stat Badges -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div class="text-3xl font-bold text-blue-400">🎨 UI/UX</div>
+                    <div class="text-sm text-slate-400 mt-1">ການອອກແບບໜ້າຕາ</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div class="text-3xl font-bold text-emerald-400">💻 Front-End</div>
+                    <div class="text-sm text-slate-400 mt-1">ສ່ວນສະແດງຜົນ</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div class="text-3xl font-bold text-purple-400">⚙️ Back-End</div>
+                    <div class="text-sm text-slate-400 mt-1">ລະບົບປະມວນຜົນ</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div class="text-3xl font-bold text-amber-400">🗄️ Database</div>
+                    <div class="text-sm text-slate-400 mt-1">ການຈັດການຖານຂໍ້ມູນ</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3 Core Pillars Section (Interactive Tabs) -->
+        <section id="pillars" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">3 ເສົາຫຼັກສຳຄັນທີ່ຕ້ອງໄດ້ຮຽນ</h2>
+                <p class="text-slate-400">ກົດເລືອກໝວດໝູ່ເພື່ອເບິ່ງລາຍລະອຽດ ແລະ ເຄື່ອງມືທີ່ໃຊ້ຮຽນ</p>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+                <button onclick="switchTab('uiux')" id="tab-uiux" class="tab-btn active px-6 py-3 rounded-xl font-medium text-sm transition-all flex items-center gap-2 bg-blue-600 text-white shadow-lg shadow-blue-600/30">
+                    <i class="fa-solid fa-pen-nib"></i> 1. UI/UX Design
+                </button>
+                <button onclick="switchTab('frontend')" id="tab-frontend" class="tab-btn px-6 py-3 rounded-xl font-medium text-sm transition-all flex items-center gap-2 bg-slate-900 text-slate-400 hover:text-white border border-slate-800">
+                    <i class="fa-solid fa-code"></i> 2. Front-End Development
+                </button>
+                <button onclick="switchTab('backend')" id="tab-backend" class="tab-btn px-6 py-3 rounded-xl font-medium text-sm transition-all flex items-center gap-2 bg-slate-900 text-slate-400 hover:text-white border border-slate-800">
+                    <i class="fa-solid fa-server"></i> 3. Back-End & Database
+                </button>
+            </div>
+
+            <!-- Tab Content Containers -->
+            <div id="tab-content" class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl">
+                <!-- UI/UX Content -->
+                <div id="content-uiux" class="tab-pane">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <span class="text-blue-400 font-semibold text-sm">Visual & User Experience</span>
+                            <h3 class="text-2xl font-bold text-white mt-1 mb-4">ການອອກແບບໜ້າຕາ ແລະ ປະສົບການຜູ້ໃຊ້</h3>
+                            <p class="text-slate-300 leading-relaxed mb-6">
+                                ເນັ້ນໃສ່ການເຮັດໃຫ້ເວັບໄຊ <strong>"ງາມຕາ ແລະ ໃຊ້ງານງ່າຍ"</strong>. ຮຽນກ່ຽວກັບການວິເຄາະພຶດຕິກຳຜູ້ໃຊ້ (UX) ເພື່ອວາງໂຄງຮ່າງ (Wireframe) ແລະ ການເລືອກໃຊ້ສີ, ຟອນ, ປຸ່ມຕ່າງໆ (UI) ໃຫ້ໂດດເດັ່ນ.
+                            </p>
+                            <h4 class="font-semibold text-white mb-3">ເຄື່ອງມືຫຼັກທີ່ໄດ້ໃຊ້:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-lg text-sm border border-slate-700">Figma</span>
+                                <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-lg text-sm border border-slate-700">Adobe XD</span>
+                                <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-lg text-sm border border-slate-700">Photoshop</span>
+                                <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-lg text-sm border border-slate-700">Canva</span>
+                            </div>
+                        </div>
+                        <div class="bg-slate-950 p-6 rounded-xl border border-slate-800">
+                            <h4 class="text-slate-400 text-xs font-mono uppercase mb-4">ຕົວຢ່າງຜົນງານ UI/UX wireframe:</h4>
+                            <div class="space-y-3">
+                                <div class="h-8 bg-slate-800 rounded-lg w-full flex items-center px-3 justify-between">
+                                    <div class="w-16 h-3 bg-blue-500/40 rounded"></div>
+                                    <div class="flex gap-2">
+                                        <div class="w-8 h-2 bg-slate-700 rounded"></div>
+                                        <div class="w-8 h-2 bg-slate-700 rounded"></div>
+                                    </div>
+                                </div>
+                                <div class="h-24 bg-gradient-to-r from-blue-900/40 to-purple-900/40 border border-dashed border-slate-700 rounded-lg flex items-center justify-center">
+                                    <span class="text-xs text-slate-400"><i class="fa-regular fa-image"></i> Banner Display Area</span>
+                                </div>
+                                <div class="grid grid-cols-3 gap-2">
+                                    <div class="h-16 bg-slate-800 rounded-lg"></div>
+                                    <div class="h-16 bg-slate-800 rounded-lg"></div>
+                                    <div class="h-16 bg-slate-800 rounded-lg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Front-End Content -->
+                <div id="content-frontend" class="tab-pane hidden">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <span class="text-emerald-400 font-semibold text-sm">Client-Side Development</span>
+                            <h3 class="text-2xl font-bold text-white mt-1 mb-4">ການຂຽນໂຄ້ດສ່ວນໜ້າ (Front-End)</h3>
+                            <p class="text-slate-300 leading-relaxed mb-6">
+                                ເປັນການປ່ຽນແບບອອກແບບໃຫ້ກາຍເປັນເວັບໄຊແທ້ ທີ່ຜູ້ໃຊ້ສາມາດກົດ, ເລື່ອນ ແລະ ໂຕ້ຕອບໄດ້. ຮຽນກ່ຽວກັບການຈັດໂຄງສ້າງ, ຕົກແຕ່ງ ແລະ ໃສ່ລູກຫຼິ້ນໃຫ້ກັບເວັບໄຊ.
+                            </p>
+                            <h4 class="font-semibold text-white mb-3">ພາສາ ແລະ ໄລບຣາຣີຫຼັກ:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-amber-500/10 text-amber-400 rounded-lg text-sm border border-amber-500/20">HTML5</span>
+                                <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-lg text-sm border border-blue-500/20">CSS3</span>
+                                <span class="px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-lg text-sm border border-yellow-500/20">JavaScript</span>
+                                <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 rounded-lg text-sm border border-cyan-500/20">React.js</span>
+                                <span class="px-3 py-1 bg-teal-500/10 text-teal-400 rounded-lg text-sm border border-teal-500/20">Tailwind CSS</span>
+                            </div>
+                        </div>
+                        <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 font-mono text-xs text-slate-300 overflow-x-auto">
+                            <div class="text-slate-500 mb-2">// ຕົວຢ່າງໂຄ້ດ Front-End</div>
+                            <span class="text-purple-400">&lt;button</span> 
+                            <span class="text-blue-400">class</span>=<span class="text-emerald-300">"bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"</span>
+                            <span class="text-blue-400">onclick</span>=<span class="text-emerald-300">"welcomeUser()"</span><span class="text-purple-400">&gt;</span><br>
+                            &nbsp;&nbsp;ກົດທີ່ນີ້<br>
+                            <span class="text-purple-400">&lt;/button&gt;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back-End Content -->
+                <div id="content-backend" class="tab-pane hidden">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <span class="text-purple-400 font-semibold text-sm">Server-Side & Database</span>
+                            <h3 class="text-2xl font-bold text-white mt-1 mb-4">ການຂຽນໂຄ້ດສ່ວນຫຼັງ ແລະ ຖານຂໍ້ມູນ</h3>
+                            <p class="text-slate-300 leading-relaxed mb-6">
+                                ເນັ້ນໃສ່ລະບົບເບື້ອງຫຼັງທີ່ຜູ້ໃຊ້ບໍ່ເຫັນ ເຊັ່ນ: ລະບົບລັອກອິນ, ການຄິດໄລ່ເງິນ, ການເຊື່ອມຕໍ່ຖານຂໍ້ມູນ (Database) ແລະ ເຊີເວີ ເພື່ອໃຫ້ເວັບໄຊມີຄວາມປອດໄພ.
+                            </p>
+                            <h4 class="font-semibold text-white mb-3">ເທັກໂນໂລຢີສ່ວນຫຼັງ:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-green-500/10 text-green-400 rounded-lg text-sm border border-green-500/20">Node.js</span>
+                                <span class="px-3 py-1 bg-blue-500/10 text-blue-300 rounded-lg text-sm border border-blue-500/20">Python</span>
+                                <span class="px-3 py-1 bg-indigo-500/10 text-indigo-400 rounded-lg text-sm border border-indigo-500/20">PHP (Laravel)</span>
+                                <span class="px-3 py-1 bg-sky-500/10 text-sky-400 rounded-lg text-sm border border-sky-500/20">MySQL</span>
+                                <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 rounded-lg text-sm border border-emerald-500/20">MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 font-mono text-xs text-slate-300">
+                            <div class="text-slate-500 mb-2">// ຕົວຢ່າງການດຶງຂໍ້ມູນຈາກ Server (Node.js/Express)</div>
+                            <span class="text-purple-400">app</span>.<span class="text-blue-400">get</span>(<span class="text-emerald-300">'/api/users'</span>, (req, res) =&gt; {<br>
+                            &nbsp;&nbsp;<span class="text-purple-400">const</span> users = await Database.<span class="text-blue-400">findAll</span>();<br>
+                            &nbsp;&nbsp;res.<span class="text-blue-400">json</span>(users);<br>
+                            });
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Playground Section -->
+        <section id="playground" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8">
+                <div class="mb-6">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-blue-400">Interactive Preview</span>
+                    <h3 class="text-2xl font-bold text-white mt-1">ລອງປ່ຽນແປງ ໂຄ້ດເວັບໄຊຕົວຢ່າງ!</h3>
+                    <p class="text-slate-400 text-sm">ລອງກົດປຸ່ມດ້ານລຸ່ມເພື່ອເບິ່ງວ່າການປ່ຽນແປງ CSS/JS ສົ່ງຜົນຕໍ່ໜ້າເວັບແນວໃດ</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Controls -->
+                    <div class="space-y-4 bg-slate-950 p-5 rounded-xl border border-slate-800">
+                        <div>
+                            <label class="text-xs text-slate-400 font-medium block mb-2">1. ປ່ຽນຂໍ້ຄວາມ (Text Content)</label>
+                            <input type="text" id="demo-text-input" value="ສະບາຍດີ! ຍິນດີຕ້ອນຮັບສູ່ໂລກ Web Dev" 
+                                   oninput="updateDemo()"
+                                   class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500">
+                        </div>
+
+                        <div>
+                            <label class="text-xs text-slate-400 font-medium block mb-2">2. ເລືອກສີປຸ່ມ (Button Color - CSS)</label>
+                            <div class="flex gap-3">
+                                <button onclick="changeColor('bg-blue-600')" class="w-8 h-8 rounded-full bg-blue-600 ring-2 ring-offset-2 ring-offset-slate-900 ring-blue-500"></button>
+                                <button onclick="changeColor('bg-emerald-600')" class="w-8 h-8 rounded-full bg-emerald-600 ring-2 ring-offset-2 ring-offset-slate-900 ring-emerald-500"></button>
+                                <button onclick="changeColor('bg-purple-600')" class="w-8 h-8 rounded-full bg-purple-600 ring-2 ring-offset-2 ring-offset-slate-900 ring-purple-500"></button>
+                                <button onclick="changeColor('bg-rose-600')" class="w-8 h-8 rounded-full bg-rose-600 ring-2 ring-offset-2 ring-offset-slate-900 ring-rose-500"></button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="text-xs text-slate-400 font-medium block mb-2">3. ເປີດ/ປິດ ເອັບເຟັກເງົາ (Box Shadow)</label>
+                            <button onclick="toggleShadow()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-xs text-slate-200 rounded-lg border border-slate-700 transition">
+                                Toggle Shadow
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Live Render Box -->
+                    <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 flex flex-col items-center justify-center min-h-[200px]">
+                        <span class="text-xs text-slate-500 font-mono mb-4">-- ຜົນລັດການສະແດງຜົນ (Live Preview) --</span>
+                        <div id="demo-card" class="p-6 rounded-xl bg-slate-900 border border-slate-800 text-center transition-all duration-300 w-full max-w-sm">
+                            <h4 id="demo-heading" class="text-lg font-bold text-white mb-4">ສະບາຍດີ! ຍິນດີຕ້ອນຮັບສູ່ໂລກ Web Dev</h4>
+                            <button id="demo-button" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-300 hover:scale-105">
+                                ປຸ່ມຕົວຢ່າງ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Opportunities Section -->
+        <section id="careers" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">ຮຽນຈົບສາຂານີ້ ເຮັດວຽກຫຍັງໄດ້ແດ່?</h2>
+                <p class="text-slate-400">ໂອກາດສາຍງານທີ່ຫຼາກຫຼາຍ ແລະ ເປັນທີ່ຕ້ອງການສູງໃນຕະຫຼາດແຮງງານ</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Job Card 1 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-blue-500/50 transition duration-300">
+                    <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-400 text-xl mb-4">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-white mb-2">Front-End Developer</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        ນັກພັດທະນາສ່ວນສະແດງຜົນ ເນັ້ນສ້າງໜ້າຕາເວັບໄຊໃຫ້ງາມ ໂຕ້ຕອບໄດ້ດີ ແລະ ຮອງຮັບມືຖື.
+                    </p>
+                </div>
+
+                <!-- Job Card 2 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-purple-500/50 transition duration-300">
+                    <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 text-xl mb-4">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-white mb-2">Back-End Developer</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        ນັກພັດທະນາລະບົບເບື້ອງຫຼັງ ເນັ້ນການຈັດການຖານຂໍ້ມູນ, ຄວາມປອດໄພ ແລະ API.
+                    </p>
+                </div>
+
+                <!-- Job Card 3 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 text-xl mb-4">
+                        <i class="fa-solid fa-[#00d26a] fa-layer-group"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-white mb-2">Full-Stack Developer</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        ຜູ້ຊ່ຽວຊານທີ່ສາມາດເຮັດໄດ້ທັງ Front-End ແລະ Back-End ໃນຄົນດຽວ (ເປັນທີ່ຕ້ອງການຫຼາຍ).
+                    </p>
+                </div>
+
+                <!-- Job Card 4 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-amber-500/50 transition duration-300">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-400 text-xl mb-4">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-white mb-2">UI/UX Designer</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        ນັກອອກແບບໜ້າຕາ ແລະ ວິເຄາະ ປະສົບການຜູ້ໃຊ້ ເພື່ອໃຫ້ແອັບ/ເວັບ ໃຊ້ງານງ່າຍທີ່ສຸດ.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Quiz Section -->
+        <section id="quiz" class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-10">
+                <div class="text-center mb-8">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-blue-400">Knowledge Check</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">ແບບທົດສອບຄວາມຮູ້ສັ້ນໆ (Quick Quiz)</h2>
+                </div>
+
+                <div id="quiz-container">
+                    <div class="mb-6">
+                        <h3 id="quiz-question" class="text-lg font-semibold text-white mb-4">
+                            1. ພາສາໃດທີ່ໃຊ້ສຳລັບຈັດໂຄງສ້າງຫຼັກຂອງເວັບໄຊ (Structure)?
+                        </h3>
+                        <div id="quiz-options" class="space-y-3">
+                            <button onclick="checkAnswer(0)" class="quiz-opt w-full text-left p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-blue-500 transition text-sm text-slate-300">
+                                A. CSS
+                            </button>
+                            <button onclick="checkAnswer(1)" class="quiz-opt w-full text-left p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-blue-500 transition text-sm text-slate-300">
+                                B. HTML
+                            </button>
+                            <button onclick="checkAnswer(2)" class="quiz-opt w-full text-left p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-blue-500 transition text-sm text-slate-300">
+                                C. JavaScript
+                            </button>
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="hidden p-4 rounded-xl text-center font-medium text-sm"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 px-4 text-center text-slate-500 text-sm">
+        <p>© 2026 Web Development Major Interactive Guide. ສ້າງຂຶ້ນເພື່ອການຮຽນຮູ້.</p>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Tab Switching Logic
+        function switchTab(tabId) {
+            // Hide all tab panes
+            document.querySelectorAll('.tab-pane').forEach(pane => {
+                pane.classList.add('hidden');
+            });
+            
+            // Deactivate all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-blue-600', 'text-white', 'shadow-lg', 'shadow-blue-600/30');
+                btn.classList.add('bg-slate-900', 'text-slate-400');
+            });
+
+            // Show selected pane & activate button
+            document.getElementById('content-' + tabId).classList.remove('hidden');
+            const activeBtn = document.getElementById('tab-' + tabId);
+            activeBtn.classList.remove('bg-slate-900', 'text-slate-400');
+            activeBtn.classList.add('bg-blue-600', 'text-white', 'shadow-lg', 'shadow-blue-600/30');
+        }
+
+        // Live Playground Logic
+        let currentColor = 'bg-blue-600';
+        let hasShadow = false;
+
+        function updateDemo() {
+            const val = document.getElementById('demo-text-input').value;
+            document.getElementById('demo-heading').innerText = val || "ສະບາຍດີ!";
+        }
+
+        function changeColor(colorClass) {
+            const btn = document.getElementById('demo-button');
+            btn.classList.remove(currentColor);
+            btn.classList.add(colorClass);
+            currentColor = colorClass;
+        }
+
+        function toggleShadow() {
+            const card = document.getElementById('demo-card');
+            hasShadow = !hasShadow;
+            if (hasShadow) {
+                card.classList.add('shadow-2xl', 'shadow-blue-500/20', 'border-blue-500/50');
+            } else {
+                card.classList.remove('shadow-2xl', 'shadow-blue-500/20', 'border-blue-500/50');
+            }
+        }
+
+        // Quiz Logic
+        const questions = [
+            {
+                q: "1. ພາສາໃດທີ່ໃຊ້ສຳລັບຈັດໂຄງສ້າງຫຼັກຂອງເວັບໄຊ (Structure)?",
+                options: ["A. CSS", "B. HTML", "C. JavaScript"],
+                correct: 1
+            },
+            {
+                q: "2. ເຄື່ອງມືໃດທີ່ນິຍົມໃຊ້ໃນການອອກແບບ UI/UX ທັງໂຄງຮ່າງ ແລະ ໜ້າຕາ?",
+                options: ["A. Figma", "B. MySQL", "C. Node.js"],
+                correct: 0
+            },
+            {
+                q: "3. ຕຳແໜ່ງໃດທີ່ຮັບຜິດຊອບທັງ Front-End ແລະ Back-End?",
+                options: ["A. UI Designer", "B. Database Admin", "C. Full-Stack Developer"],
+                correct: 2
+            }
+        ];
+
+        let currentQ = 0;
+        let score = 0;
+
+        function checkAnswer(optIndex) {
+            const resultDiv = document.getElementById('quiz-result');
+            resultDiv.classList.remove('hidden');
+
+            if (optIndex === questions[currentQ].correct) {
+                score++;
+                resultDiv.className = "p-4 rounded-xl text-center font-medium text-sm bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4";
+                resultDiv.innerText = "✨ ຖືກຕ້ອງແລ້ວ!";
+            } else {
+                resultDiv.className = "p-4 rounded-xl text-center font-medium text-sm bg-rose-500/10 text-rose-400 border border-rose-500/20 mb-4";
+                resultDiv.innerText = "❌ ຍັງບໍ່ຖືກຕ້ອງ!";
+            }
+
+            setTimeout(() => {
+                currentQ++;
+                if (currentQ < questions.length) {
+                    loadQuestion();
+                } else {
+                    showFinalScore();
+                }
+            }, 1200);
+        }
+
+        function loadQuestion() {
+            const resultDiv = document.getElementById('quiz-result');
+            resultDiv.classList.add('hidden');
+
+            const qData = questions[currentQ];
+            document.getElementById('quiz-question').innerText = qData.q;
+            
+            const optionsDiv = document.getElementById('quiz-options');
+            optionsDiv.innerHTML = '';
+            qData.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = "quiz-opt w-full text-left p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-blue-500 transition text-sm text-slate-300";
+                btn.innerText = opt;
+                btn.onclick = () => checkAnswer(idx);
+                optionsDiv.appendChild(btn);
+            });
+        }
+
+        function showFinalScore() {
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = `
+                <div class="text-center py-6">
+                    <div class="text-4xl mb-3">🎉</div>
+                    <h3 class="text-xl font-bold text-white mb-2">ສຳເລັດແບບທົດສອບ!</h3>
+                    <p class="text-slate-300 text-sm mb-6">ທ່ານໄດ້ຄະແນນ ${score} / ${questions.length}</p>
+                    <button onclick="resetQuiz()" class="bg-blue-600 hover:bg-blue-500 text-white text-sm px-6 py-2.5 rounded-lg transition font-medium">
+                        ທົດສອບໃໝ່ອີກຄັ້ງ
+                    </button>
+                </div>
+            `;
+        }
+
+        function resetQuiz() {
+            currentQ = 0;
+            score = 0;
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = `
+                <div class="mb-6">
+                    <h3 id="quiz-question" class="text-lg font-semibold text-white mb-4"></h3>
+                    <div id="quiz-options" class="space-y-3"></div>
+                </div>
+                <div id="quiz-result" class="hidden p-4 rounded-xl text-center font-medium text-sm"></div>
+            `;
+            loadQuestion();
+        }
+    </script>
+</body>
+</html>
