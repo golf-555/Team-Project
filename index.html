@@ -1,204 +1,426 @@
 <!DOCTYPE html>
 <html lang="lo">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web Design - ແນະນຳສາຂາອອກເເບບແລະພັດທະນາເວັບໄຊ້</title>
-<style>
-* { box-sizing: border-box; scroll-behavior: smooth; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB LEARNING | KTVC</title>
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f7fc;
-  color: #26334a;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-header {
-  background: #10264a;
-  color: white;
-  padding: 20px 8%;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
+        /* Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 7%;
+            background: #111c33;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
 
-nav h2 { color: #60c7ff; }
+        header h2 {
+            color: #38bdf8;
+        }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 8px;
-}
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
 
-.hero {
-  text-align: center;
-  padding: 75px 15px;
-  background: linear-gradient(135deg,#10264a,#1767a5);
-  color: white;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
 
-.hero h1 { font-size: 38px; }
+        nav a:hover {
+            color: #38bdf8;
+        }
 
-.hero p {
-  font-size: 18px;
-  line-height: 1.8;
-}
+        /* Home */
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(135deg, #0f172a, #172554);
+        }
 
-.btn {
-  display: inline-block;
-  background: #35b6f5;
-  color: white;
-  padding: 13px 25px;
-  border-radius: 8px;
-  text-decoration: none;
-  margin-top: 15px;
-}
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
 
-.container {
-  max-width: 1050px;
-  margin: auto;
-  padding: 30px 18px;
-}
+        .hero span {
+            color: #38bdf8;
+        }
 
-.section {
-  background: white;
-  padding: 25px;
-  margin: 20px 0;
-  border-radius: 14px;
-  box-shadow: 0 3px 15px #00000010;
-}
+        .hero p {
+            color: #cbd5e1;
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
 
-h2 { color: #1767a5; }
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-  gap: 18px;
-}
+        .btn:hover {
+            background: #7dd3fc;
+        }
 
-.item {
-  background: #edf5ff;
-  padding: 20px;
-  border-radius: 12px;
-}
+        /* General Sections */
+        section {
+            padding: 70px 8%;
+            text-align: center;
+        }
 
-.item h3 { color: #1767a5; }
+        section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
 
-li {
-  line-height: 2;
-}
+        .description {
+            color: #cbd5e1;
+            line-height: 1.8;
+        }
 
-footer {
-  background: #10264a;
-  color: white;
-  text-align: center;
-  padding: 25px;
-}
+        /* Courses */
+        .course-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 35px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-@media(max-width:600px) {
-  .hero h1 { font-size: 27px; }
-  nav { justify-content: center; }
-}
-</style>
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            width: 260px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.7;
+        }
+
+        /* School */
+        .school-box {
+            max-width: 750px;
+            margin: 30px auto 0;
+            padding: 35px;
+            border-radius: 15px;
+            background: #1e293b;
+        }
+
+        .school-box h3 {
+            color: #38bdf8;
+            font-size: 24px;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        /* Contact */
+        .contact-box {
+            background: #1e293b;
+            max-width: 650px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .contact-box p {
+            margin: 18px 0;
+            color: #cbd5e1;
+            line-height: 1.8;
+        }
+
+        .contact-box a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Creators */
+        .creator-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .creator {
+            background: #1e293b;
+            width: 200px;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .creator h3 {
+            color: #38bdf8;
+            margin-bottom: 8px;
+        }
+
+        .creator p {
+            color: #cbd5e1;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111c33;
+            color: #94a3b8;
+            line-height: 1.8;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero {
+                padding: 85px 15px;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+
+            .school-box {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
+<!-- Navigation -->
 <header>
-<nav>
-<h2>WEB DESIGN</h2>
-<div>
-<a href="#home">ໜ້າຫຼັກ</a>
-<a href="#about">ກ່ຽວກັບ</a>
-<a href="#course">ຫຼັກສູດ</a>
-<a href="#career">ອາຊີບ</a>
-<a href="#contact">ຕິດຕໍ່</a>
-</div>
-</nav>
+    <h2>WEB LEARNING</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#school">School</a>
+        <a href="#contact">Contact</a>
+        <a href="#creators">Creators</a>
+    </nav>
 </header>
 
+<!-- Home -->
 <section class="hero" id="home">
-<h1>ສາຂາວິຊາອອກແບບເວັບໄຊ້</h1>
-<p>ຮຽນຮູ້ການອອກແບບ ແລະສ້າງເວັບໄຊ້<br>
-ພັດທະນາຄວາມສາມາດສູ່ອະນາຄົດດິຈິຕອນ</p>
-<a href="#about" class="btn">ຮູ້ຈັກສາຂາຂອງເຮົາ</a>
+
+    <h1>Learn <span>Web Design</span> & Development</h1>
+
+    <p>
+        ເລີ່ມຕົ້ນຮຽນຮູ້ການອອກແບບ
+        ແລະ ພັດທະນາເວັບໄຊ້
+        ຈາກພື້ນຖານຈົນເຖິງລະດັບມືອາຊີບ
+    </p>
+
+    <a href="#courses" class="btn">Start Learning</a>
+
 </section>
 
-<div class="container">
+<!-- About -->
+<section id="about">
 
-<section class="section" id="about">
-<h2>ກ່ຽວກັບສາຂາ</h2>
-<p>ສາຂາອອກແບບເວັບໄຊ້ ແມ່ນສາຂາທີ່ສຶກສາ
-ການອອກແບບ ແລະພັດທະນາເວັບໄຊ້
-ເພື່ອໃຫ້ຜູ້ໃຊ້ສາມາດເຂົ້າເຖິງຂໍ້ມູນໄດ້ສະດວກ.</p>
+    <h2>About Web Development</h2>
+
+    <p class="description">
+        Web Development ແມ່ນການອອກແບບ
+        ແລະ ພັດທະນາເວັບໄຊ້
+        ເພື່ອໃຫ້ຜູ້ໃຊ້ສາມາດເຂົ້າເຖິງ
+        ຂໍ້ມູນ ແລະ ບໍລິການຕ່າງໆໄດ້
+    </p>
+
 </section>
 
-<section class="section" id="course">
-<h2>ຫຼັກສູດທີ່ຮຽນ</h2>
-<div class="grid">
-<div class="item">
-<h3>HTML</h3>
-<p>ຮຽນສ້າງໂຄງສ້າງເວັບໄຊ້</p>
-</div>
-<div class="item">
-<h3>CSS</h3>
-<p>ຮຽນຕົກແຕ່ງໜ້າເວັບໃຫ້ສວຍງາມ</p>
-</div>
-<div class="item">
-<h3>JavaScript</h3>
-<p>ຮຽນເພີ່ມຄວາມໂຕ້ຕອບໃຫ້ເວັບໄຊ້</p>
-</div>
-<div class="item">
-<h3>UI/UX</h3>
-<p>ຮຽນອອກແບບໜ້າຕາ ແລະປະສົບການຜູ້ໃຊ້</p>
-</div>
-</div>
+<!-- Courses -->
+<section id="courses">
+
+    <h2>Our Learning Courses</h2>
+
+    <p class="description">
+        ບົດຮຽນພື້ນຖານສຳລັບການສ້າງເວັບໄຊ້
+    </p>
+
+    <div class="course-container">
+
+        <div class="card">
+            <h3>HTML</h3>
+            <p>
+                Learn the structure of websites.
+                ຮຽນຮູ້ການສ້າງໂຄງສ້າງເວັບໄຊ້
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>
+                Learn how to design beautiful websites.
+                ຮຽນຮູ້ການຕົກແຕ່ງເວັບໄຊ້
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>
+                Learn how to make websites interactive.
+                ຮຽນຮູ້ການເພີ່ມຄວາມເຄື່ອນໄຫວໃນເວັບໄຊ້
+            </p>
+        </div>
+
+    </div>
+
 </section>
 
-<section class="section" id="career">
-<h2>ຮຽນຈົບແລ້ວເຮັດອາຊີບຫຍັງ?</h2>
-<ul>
-<li>ນັກອອກແບບເວັບໄຊ້</li>
-<li>ນັກພັດທະນາເວັບ</li>
-<li>ນັກອອກແບບກຣາຟິກ</li>
-<li>ນັກອອກແບບ UI/UX</li>
-<li>ພະນັກງານ IT</li>
-</ul>
+<!-- School -->
+<section id="school">
+
+    <h2>Our School</h2>
+
+    <div class="school-box">
+
+        <h3>
+            ວິທະຍາໄລເຕັກນິກ-ວິຊາຊີບ
+            ແຂວງຄຳມ່ວນ KTVC
+        </h3>
+
+        <p class="description">
+            Technical and Vocational College of Khammouane
+        </p>
+
+        <p class="description">
+            ສະຖາບັນການສຶກສາດ້ານເຕັກນິກ
+            ແລະ ວິຊາຊີບ
+        </p>
+
+    </div>
+
 </section>
 
-<section class="section">
-<h2>ຈຸດເດັ່ນຂອງສາຂາ</h2>
-<div class="grid">
-<div class="item">💻 ໄດ້ຝຶກຂຽນໂຄດ</div>
-<div class="item">🎨 ໄດ້ຝຶກອອກແບບ</div>
-<div class="item">🌐 ໄດ້ສ້າງເວັບຈິງ</div>
-<div class="item">🚀 ນຳຄວາມຮູ້ໄປໃຊ້ເຮັດວຽກ</div>
-</div>
+<!-- Contact -->
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+
+        <p>
+            <strong>ວິທະຍາໄລເຕັກນິກ-ວິຊາຊີບເເຂວງຄຳມ່ວນ KTVC:</strong><br>
+        </p>
+
+        <p>
+            <strong>Phone:</strong><br>
+            <a href="tel:00000000">00000000</a>
+        </p>
+
+        <p>
+            <strong>Facebook Page:</strong><br>
+            <a href="https://www.facebook.com/KTVC.Official"
+               target="_blank"
+               rel="noopener noreferrer">
+                KTVC Official Facebook
+            </a>
+        </p>
+
+    </div>
+
 </section>
 
-<section class="section" id="contact">
-<h2>ຕິດຕໍ່ສອບຖາມ</h2>
-<p>ສົນໃຈສາຂາອອກແບບເວັບໄຊ້
-ສາມາດຕິດຕໍ່ສອບຖາມຂໍ້ມູນໄດ້.</p>
-<p>ໂທ: 020 XXXXXXXX</p>
-<p>Facebook: ຊື່ໜ້າເພຈຂອງສາຂາ</p>
+<!-- Creators -->
+<section id="creators">
+
+    <h2>Website Creators</h2>
+
+    <p class="description">
+        ລາຍຊື່ຜູ້ສ້າງ ແລະ ພັດທະນາເວັບໄຊ້
+    </p>
+
+    <div class="creator-container">
+
+        <div class="creator">
+            <h3>Kedsadaphone</h3>
+            <p>Website Creator</p>
+        </div>
+
+        <div class="creator">
+            <h3>vimala</h3>
+            <p>Website Creator</p>
+        </div>
+
+        <div class="creator">
+            <h3>chintala</h3>
+            <p>Website Creator</p>
+        </div>
+
+        <div class="creator">
+            <h3>namfon</h3>
+            <p>Website Creator</p>
+        </div>
+
+    </div>
+
 </section>
 
-</div>
-
+<!-- Footer -->
 <footer>
-<h3>WEB DESIGN</h3>
-<a href="https://www.facebook.com/KTVC.Official"
-     target="_blank"
-     rel="noopener noreferrer">
-    <span>📘</span> Facebook KTVC Official </a>
-<p>ສ້າງສັນຄວາມຄິດ ພັດທະນາສູ່ອະນາຄົດ</p>
-<p>ຜົນງານໂປຣເຈັກຂອງທີມ 4 ຄົນ</p>
+
+    <p>© 2026 WEB LEARNING</p>
+
+    <p>Created by WEB LEARNING Team | KTVC</p>
+
 </footer>
 
 </body>

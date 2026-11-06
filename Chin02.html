@@ -1,0 +1,69 @@
+class Student:
+    def __init__(self, name):
+        self.name = name
+        self.knowledge_level = 0
+        self.skills = []
+        self.money = 0
+        self.job = "ຫວ່າງງານ"
+
+    def study(self, subject, level_increase):
+        """ຟັງຊັນການຮຽນຮູ້"""
+        self.knowledge_level += level_increase
+        if subject not in self.skills:
+            self.skills.append(subject)
+        print(f"📚 {self.name} ໄດ້ຮຽນວິຊາ: {subject} (ລະດັບຄວາມຮູ້ເພີ່ມເປັນ: {self.knowledge_level})")
+
+    def apply_for_job(self):
+        """ຟັງຊັນການສະໝັກ ແລະ ປະກອບອາຊີບຕາມທັກສະ"""
+        print("\n🔍 ກຳລັງຊອກຫາອາຊີບທີ່ເໝາະສົມ...")
+        
+        if "ການຂຽນໂປຣແກຣມ" in self.skills and self.knowledge_level >= 80:
+            self.job = "ນັກພັດທະນາຊອບແວ (Software Developer)"
+            salary = 15000000
+        elif "ການຕະຫຼາດດິຈິທັລ" in self.skills and self.knowledge_level >= 50:
+            self.job = "ນັກການຕະຫຼາດ (Digital Marketer)"
+            salary = 8000000
+        elif "ພາສາຕ່າງປະເທດ" in self.skills and self.knowledge_level >= 40:
+            self.job = "ລ່າມ / ພະນັກງານຕ້ອນຮັບ"
+            salary = 6000000
+        else:
+            self.job = "ພະນັກງານທົ່ວໄປ"
+            salary = 3000000
+
+        print(f"🎉 ຍິນດີດ້ວຍ! {self.name} ໄດ້ປະກອບອາຊີບເປັນ: {self.job}")
+        return salary
+
+    def work(self, salary_per_month, months):
+        """ຟັງຊັນການເຮັດວຽກ ແລະ ເກັບກຳລາຍໄດ້"""
+        total_earned = salary_per_month * months
+        self.money += total_earned
+        print(f"💼 ເຮັດວຽກເປັນເວລາ {months} ເດືອນ, ໄດ້ຮັບລາຍໄດ້ທັງໝົດ: {total_earned:,} ກີບ")
+
+    def show_profile(self):
+        """ສະແດງຂໍ້ມູນສະຫຼຸບ"""
+        print("\n" + "="*30)
+        print(f"👤 ຊື່: {self.name}")
+        print(f"🧠 ລະດັບຄວາມຮູ້: {self.knowledge_level}")
+        print(f"🛠️ ທັກສະທີ່ມີ: {', '.join(self.skills)}")
+        print(f"👔 ອາຊີບປັດຈຸບັນ: {self.job}")
+        print(f"💰 ເງິນເກັບທັງໝົດ: {self.money:,} ກີບ")
+        print("="*30)
+
+
+# --- ເລີ່ມຕົ້ນການທຳງານຂອງໂປຣແກຣມ ---
+if __name__ == "__main__":
+    # 1. ສ້າງຕົວລະຄອນຜູ້ຮຽນ
+    student1 = Student("ສົມຈິດ")
+
+    # 2. ຂັ້ນຕອນການຮຽນ (Study)
+    student1.study("ພາສາຕ່າງປະເທດ", 30)
+    student1.study("ການຂຽນໂປຣແກຣມ", 60) # ຄວາມຮູ້ລວມ = 90
+
+    # 3. ຂັ້ນຕອນການປະກອບອາຊີບ (Apply Job)
+    monthly_salary = student1.apply_for_job()
+
+    # 4. ເຮັດວຽກ ແລະ ຫາລາຍໄດ້ (Work & Earn)
+    student1.work(monthly_salary, months=12)
+
+    # 5. ສະແດງຜົນສະຫຼຸບ
+    student1.show_profile()
